@@ -9,4 +9,6 @@
 - import / use the custom module classes in app module
 
 ### UI Features
+- Adding and using a button in constraint layout
+- Button click demo
 - Simple "Toast" demo

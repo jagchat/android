@@ -3,7 +3,7 @@
 
 ### Features
 
-- create / add a new activites to app
+- create / add new activites to app
 - create intents to invoke / show activities using buttons
 
 ### UI Features

@@ -7,4 +7,4 @@
 - fetch values in target activity using "get" methods of custom object
 
 ### UI Feature
-- in order to create a new class, right click on app | java | <your package> and select New | Java Class
+- in order to create a new class, right click on app | java | &lt;your package&gt; and select New | Java Class

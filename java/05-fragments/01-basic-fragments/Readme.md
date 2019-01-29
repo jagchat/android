@@ -9,3 +9,7 @@
 ### UI Features
 - Adding new fragment
 - drop fragment into an activity using <fragment> element using designer
+
+### Images
+
+![01.png](images/01.png?raw=true "01.png")

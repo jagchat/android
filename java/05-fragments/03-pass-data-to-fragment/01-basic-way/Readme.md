@@ -7,3 +7,7 @@
 - Create new fragment
 - Pass custom object (as data) to new fragment being created - using bundle
 - Retrieve bundle/custom object in fragment 
+
+### Images
+
+![01.png](images/01.png?raw=true "01.png")

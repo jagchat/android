@@ -12,3 +12,7 @@
 
 ### UI Features
 - How to create Fragment with Factory method support (video)
+
+### Images
+
+![01.png](images/01.png?raw=true "01.png")

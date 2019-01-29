@@ -10,3 +10,7 @@
 - Pass custom object to an already existing fragment (using custom method) - using bundle
 - Retrieve bundle/custom object in fragment (both during new instance and later when passing only data)
 - How to access controls (views) in android fragment (inside and outside 'onCreateView' method)
+
+### Images
+
+![01.png](images/01.png?raw=true "01.png")

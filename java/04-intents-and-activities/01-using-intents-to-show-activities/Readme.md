@@ -10,3 +10,7 @@
 - Adding new activity
 - A look at ActivityManifest.xml
 - Button click demo
+
+### Images
+
+![01.png](images/01.png?raw=true "01.png")

@@ -1,5 +1,5 @@
 # Demo
-- pass data in the form of custom object to a fragment from an activity
+- pass data in the form of custom object to a new or existing fragment from an activity
 
 ### Features
 - Use custom (serializable) class to define structure of data being passed to fragment

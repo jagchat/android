@@ -44,6 +44,7 @@ public class SumFragment extends Fragment {
         Bundle b = getArguments(); //get the passed bundle (works only once the frag is added)
         showResult(b, v);
 
-        return v;    }
+        return v;
+    }
 
 }

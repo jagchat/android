@@ -52,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
         //create fragment instance
         SumFragment frg = new SumFragment();
         frg.setArguments(b); //passing data using bundle
+
         //add fragment
         getSupportFragmentManager()
                 .beginTransaction()

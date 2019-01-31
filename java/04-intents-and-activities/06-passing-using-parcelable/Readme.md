@@ -9,7 +9,7 @@
 
 ### UI Feature
 - in order to create a new class, right click on app | java | &lt;your package&gt; and select New | Java Class
-- in order to convert a (custom data) class to parcelable, go to Code | Genearate | Parcelable (you need to have parcelable plug-in installed)
+- in order to convert a (custom data) class to parcelable, go to Code | Genearate | Parcelable (you need to have parcelable plug-in installed for easy creation)
 - How to install parcelable plug-in for Android Studio
 
 ### Images

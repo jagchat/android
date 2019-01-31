@@ -1,6 +1,9 @@
 # Demo
 - how to maintain (or persist) screen values during rotation
 - using OnSaveInstanceState and onRestoreInstanceState
+- it is important to note that the values/state in views (or controls) are automatically maintained by android system 
+- the member variables/fields of activity are destroyed during rotation and those are supposed to be manually maintained
+- In this example, we are still trying to store values in state, which is not quite necessary (but, just to show an example)
 
 ## Activity Event Life Cycle
 

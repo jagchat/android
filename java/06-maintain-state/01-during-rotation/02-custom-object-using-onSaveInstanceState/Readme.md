@@ -9,13 +9,14 @@
 - slow performance as the data need to be stored/retrieved from disk (serialization/deserialization takes more time)
 
 #### NOTE
-- it is important to note that the values/state in views (or controls) are automatically maintained by android system 
+- it is important to note that the values/state in views (or controls) with "id"s are automatically maintained by android system 
+- we can disable views/controls to retain state automatically by setting 'android:saveEnabled="false"' - we did in our example
 - the member variables/fields of activity are destroyed during rotation and those are supposed to be manually maintained
 - In this example, we are still trying to store view values in state, which is not quite necessary (but, just to show an example)
 
 ## Features
 - using parcelable custom object to store in state (need to have plugin installed for easy creation)
-
+- using 'android:saveEnabled="false"'
 ## UI Features
 - How to install parcelable plug-in for Android Studio
 

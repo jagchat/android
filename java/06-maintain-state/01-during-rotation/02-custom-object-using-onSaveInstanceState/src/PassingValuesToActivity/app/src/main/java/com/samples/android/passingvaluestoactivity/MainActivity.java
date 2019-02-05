@@ -11,10 +11,18 @@ import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
+    public SampleData data;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
+        data = new SampleData();
+        data.setFirstValue("10");
+        data.setSecondValue("20");
+
+        setFormValues(data);
         Log.d("test-MainActivity", "OnCreate");
     }
 
@@ -63,6 +71,7 @@ public class MainActivity extends AppCompatActivity {
         
         //place values in state (before rotation)
         super.onSaveInstanceState(outState);
+        //get latest/modified values and put into state
         outState.putParcelable("data", getDataObject());
         Log.d("test-MainActivity", "OnSaveInstanceState");
     }
@@ -73,10 +82,8 @@ public class MainActivity extends AppCompatActivity {
 
         //fetch values from state (after rotation)
         SampleData d = (SampleData) savedInstanceState.getParcelable("data");
-        EditText firstNoEditText = (EditText) findViewById(R.id.firstNoEditText);
-        EditText secondNoEditText = (EditText) findViewById(R.id.secondNoEditText);
-        firstNoEditText.setText(Integer.toString(d.getFirstValue()));
-        secondNoEditText.setText(Integer.toString(d.getSecondValue()));
+        data = d;
+        setFormValues(d);
 
         Log.d("test-MainActivity", "OnRestoreInstanceState");
     }
@@ -98,9 +105,17 @@ public class MainActivity extends AppCompatActivity {
         return d;
     }
 
+    private void setFormValues(SampleData d){
+        EditText firstNoEditText = (EditText) findViewById(R.id.firstNoEditText);
+        EditText secondNoEditText = (EditText) findViewById(R.id.secondNoEditText);
+
+        firstNoEditText.setText(Integer.toString(d.getFirstValue()));
+        secondNoEditText.setText(Integer.toString(d.getSecondValue()));
+    }
+
     public void calcSumButton(View v){
         Intent intent1 = new Intent(this, Activity1.class);
-        intent1.putExtra("ProvidedValues", getDataObject());
+        intent1.putExtra("ProvidedValues", data);
 
         startActivity(intent1);
     }
